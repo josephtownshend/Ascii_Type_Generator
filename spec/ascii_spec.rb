@@ -12,7 +12,24 @@ describe Ascii_generator do
       "//////////",
       "////  ////",
       "////  ////",
+      "////  ////",
       "////  ////"
+    ].join("\n")).to_stdout
+  end
+
+  it "should return ASCII B when user inputs B" do
+    ascii_gen = Ascii_generator.new
+    expect { ascii_gen.letter_matcher("B") }.to output(
+      ["//////////",
+      "//////////",
+      "////  ////",
+      "////  ////",
+      "//////////",
+      "//////////",
+      "////  ////",
+      "////  ////",
+      "//////////",
+      "//////////"
     ].join("\n")).to_stdout
   end
 end
