@@ -32,4 +32,20 @@ describe Ascii_generator do
       "//////////"
     ].join("\n")).to_stdout
   end
+
+  it "should return ASCII C when user inputs C" do
+    ascii_gen = Ascii_generator.new
+    expect { ascii_gen.letter_matcher("C") }.to output(
+      ["//////////",
+      "//////////",
+      "////      ",
+      "////      ",
+      "////      ",
+      "////      ",
+      "////      ",
+      "////      ",
+      "//////////",
+      "//////////"
+    ].join("\n")).to_stdout
+  end
 end
