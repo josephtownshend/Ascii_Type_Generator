@@ -10,35 +10,11 @@ class Ascii_generator
 
   def letter_matcher(user_input)
     if user_input == "A"
-    print ascii_A.join("\n")
-
-
+      print ascii_A.join("\n")
     elsif user_input == "B"
-      print [
-        "//////////",
-        "//////////",
-        "////  ////",
-        "////  ////",
-        "//////////",
-        "//////////",
-        "////  ////",
-        "////  ////",
-        "//////////",
-        "//////////"
-      ].join("\n")
+      print ascii_B.join("\n")
     elsif user_input == "C"
-      print [
-        "//////////",
-        "//////////",
-        "////      ",
-        "////      ",
-        "////      ",
-        "////      ",
-        "////      ",
-        "////      ",
-        "//////////",
-        "//////////"
-      ].join("\n")
+      print ascii_C.join("\n")
     else
       return nil
     end
