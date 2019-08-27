@@ -16,7 +16,7 @@ This readme serves as documentation of a small project to build a command line A
 
 ## First Steps
 * ~Successfully return an ASCII 'A' - formatted correctly with testing.~
-* Create an array storing all the letters.
+* ~Create an array storing A,B,C letters.~
 * Break letters down into strips that can be combined to create the letters in the method dynamically.
 
 ## Second Steps
