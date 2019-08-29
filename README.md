@@ -20,7 +20,8 @@ This readme serves as documentation of a small project to build a command line A
 ## First Steps
 * ~Successfully return an ASCII 'A' - formatted correctly with testing.~
 * ~Create arrays for storing A,B,C chars.~
-* Break chars down into strips that can be combined to create the chars in the method dynamically.
+* ~Break chars down into strips that can be combined to create the chars in the method dynamically.~
+* Do every character!
 
 ## Second Steps
 * Allow for multiple chars
