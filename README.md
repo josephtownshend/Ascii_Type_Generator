@@ -29,5 +29,5 @@ This readme serves as documentation of a small project to build a command line A
 * Allow for punctuation
 
 ## Third Steps
-* Transfer chars forms to a database.
-* Add char forms to database.
+* Transfer chars to a database.
+* Add/delete chars from database.
