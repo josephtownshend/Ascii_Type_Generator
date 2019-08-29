@@ -48,4 +48,20 @@ describe Ascii_generator do
       "//////////"
     ].join("\n")).to_stdout
   end
+
+  it "should return ASCII D when user inputs D" do
+    ascii_gen = Ascii_generator.new
+    expect { ascii_gen.letter_matcher("D") }.to output(
+      ["//////////",
+      "//////////",
+      "////  ////",
+      "////  ////",
+      "////  ////",
+      "////  ////",
+      "////  ////",
+      "////  ////",
+      "//////////",
+      "//////////"
+    ].join("\n")).to_stdout
+  end
 end

@@ -5,6 +5,7 @@ class Ascii_generator
     @letter_A = [0,0,2,2,0,0,2,2,2,4]
     @letter_B = [0,0,2,2,0,0,2,2,0,3]
     @letter_C = [0,0,1,1,1,1,1,1,0,3]
+    @letter_D = [0,0,2,2,2,2,2,2,0,3]
   end
 
   def letter_matcher(user_input)
@@ -14,6 +15,8 @@ class Ascii_generator
       @letter_B.each {|x| print @ascii_slices[x]}
     elsif user_input == "C"
       @letter_C.each {|x| print @ascii_slices[x]}
+    elsif user_input == "D"
+      @letter_D.each {|x| print @ascii_slices[x]}
     else
       return nil
     end
