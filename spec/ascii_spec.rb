@@ -94,4 +94,19 @@ describe Ascii_generator do
       "////      "
     ].join("\n")).to_stdout
   end
+
+  it "should return ASCII G when user inputs G" do
+    expect { @ascii_gen.letter_matcher("G") }.to output(
+      ["//////////",
+      "//////////",
+      "////      ",
+      "////      ",
+      "////      ",
+      "////  ////",
+      "////  ////",
+      "////  ////",
+      "//////////",
+      "//////////"
+    ].join("\n")).to_stdout
+  end
 end

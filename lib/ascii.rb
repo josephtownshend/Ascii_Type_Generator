@@ -8,6 +8,7 @@ class Ascii_generator
     @letter_D = [0,0,2,2,2,2,2,2,0,3]
     @letter_E = [0,0,1,1,0,0,1,1,0,3]
     @letter_F = [0,0,1,1,0,0,1,1,1,5]
+    @letter_G = [0,0,1,1,1,2,2,2,0,3]
 
   end
 
@@ -24,6 +25,8 @@ class Ascii_generator
       @letter_E.each {|x| print @ascii_slices[x]}
     elsif user_input == "F"
       @letter_F.each {|x| print @ascii_slices[x]}
+    elsif user_input == "G"
+      @letter_G.each {|x| print @ascii_slices[x]}
     else
       return nil
     end
