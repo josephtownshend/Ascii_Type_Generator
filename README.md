@@ -17,10 +17,46 @@
 
 This readme serves as documentation of a small project to build a command line ASCII Type Generator using Ruby.
 
+--------
+
+* To get statred, first clone this repo
+
+`$ git clone git@github.com:josephtownshend/Ascii_Type_Generator.git`
+
+* To install dependencies, run Bundle
+
+`$ bundle install`
+
+* To use, run
+
+```
+$ irb
+2.6.0 :001 > require './lib/ascii.rb'
+ => true
+2.6.0 :002 > ascii_gen = Ascii_generator.new
+ => #<Ascii_generator:0x00007fad8b1c0a80>
+2.6.0 :003 > ascii_gen.letter_matcher("A")
+//////////
+//////////
+////  ////
+////  ////
+//////////
+//////////
+////  ////
+////  ////
+////  ////
+////  //// 
+```
+* To test, run
+
+`$ rspec`
+
+
 ## First Steps
 * ~Successfully return an ASCII 'A' - formatted correctly with testing.~
 * ~Create arrays for storing A,B,C chars.~
-* Break chars down into strips that can be combined to create the chars in the method dynamically.
+* ~Break chars down into strips that can be combined to create the chars in the method dynamically.~
+* Do every character!
 
 ## Second Steps
 * Allow for multiple chars
@@ -28,5 +64,5 @@ This readme serves as documentation of a small project to build a command line A
 * Allow for punctuation
 
 ## Third Steps
-* Transfer chars forms to a database.
-* Add char forms to database.
+* Transfer chars to a database.
+* Add/delete chars from database.
