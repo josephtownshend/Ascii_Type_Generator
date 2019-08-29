@@ -13,7 +13,7 @@
   \_____|______|_| \_|______|_|  \_\/_/    \_\_|  \____/|_|  \_\  |_|
 ```
 
-# Ascii Type Generator 1.0
+# Version 1.0
 
 This readme serves as documentation of a small project to build a command line ASCII Type Generator using Ruby.
 
