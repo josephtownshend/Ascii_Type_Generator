@@ -19,11 +19,11 @@ This readme serves as documentation of a small project to build a command line A
 
 --------
 
-* To get statred first clone this repo
+* To get statred, first clone this repo
 
 `$ git clone git@github.com:josephtownshend/Ascii_Type_Generator.git`
 
-* Bundle to install dependencies
+* To install dependencies, run Bundle
 
 `$ bundle install`
 
