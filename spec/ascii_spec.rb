@@ -64,4 +64,20 @@ describe Ascii_generator do
       "//////////"
     ].join("\n")).to_stdout
   end
+
+  it "should return ASCII E when user inputs E" do
+    ascii_gen = Ascii_generator.new
+    expect { ascii_gen.letter_matcher("E") }.to output(
+      ["//////////",
+      "//////////",
+      "////      ",
+      "////      ",
+      "//////////",
+      "//////////",
+      "////      ",
+      "////      ",
+      "//////////",
+      "//////////"
+    ].join("\n")).to_stdout
+  end
 end
