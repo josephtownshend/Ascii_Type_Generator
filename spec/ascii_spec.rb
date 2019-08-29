@@ -79,4 +79,19 @@ describe Ascii_generator do
       "//////////"
     ].join("\n")).to_stdout
   end
+
+  it "should return ASCII F when user inputs F" do
+    expect { @ascii_gen.letter_matcher("F") }.to output(
+      ["//////////",
+      "//////////",
+      "////      ",
+      "////      ",
+      "//////////",
+      "//////////",
+      "////      ",
+      "////      ",
+      "////      ",
+      "////      "
+    ].join("\n")).to_stdout
+  end
 end
