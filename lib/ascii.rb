@@ -1,7 +1,5 @@
 class Ascii_generator
 
-  attr_reader :ascii_A, :ascii_B, :ascii_C, :ascii_slices
-
   def initialize
     @ascii_slices = ["//////////\n", "////      \n", "////  ////\n","//////////", "////  ////", "////      "]
     @letter_A = [0,0,2,2,0,0,2,2,2,4]
