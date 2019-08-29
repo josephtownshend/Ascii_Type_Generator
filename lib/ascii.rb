@@ -1,35 +1,32 @@
-class Ascii_generator
+# frozen_string_literal: true
 
+class AsciiGenerator
   def initialize
-    @ascii_slices = ["//////////\n", "////      \n", "////  ////\n","//////////", "////  ////", "////      "]
-    @letter_A = [0,0,2,2,0,0,2,2,2,4]
-    @letter_B = [0,0,2,2,0,0,2,2,0,3]
-    @letter_C = [0,0,1,1,1,1,1,1,0,3]
-    @letter_D = [0,0,2,2,2,2,2,2,0,3]
-    @letter_E = [0,0,1,1,0,0,1,1,0,3]
-    @letter_F = [0,0,1,1,0,0,1,1,1,5]
-    @letter_G = [0,0,1,1,1,2,2,2,0,3]
-
+    @char_slices = ["//////////\n", "////      \n", "////  ////\n", '//////////', '////  ////', '////      ']
+    @char_a = [0, 0, 2, 2, 0, 0, 2, 2, 2, 4]
+    @char_b = [0, 0, 2, 2, 0, 0, 2, 2, 0, 3]
+    @char_c = [0, 0, 1, 1, 1, 1, 1, 1, 0, 3]
+    @char_d = [0, 0, 2, 2, 2, 2, 2, 2, 0, 3]
+    @char_e = [0, 0, 1, 1, 0, 0, 1, 1, 0, 3]
+    @char_f = [0, 0, 1, 1, 0, 0, 1, 1, 1, 5]
+    @char_g = [0, 0, 1, 1, 1, 2, 2, 2, 0, 3]
   end
 
-  def letter_matcher(user_input)
-    if user_input == "A"
-      @letter_A.each {|x| print @ascii_slices[x]}
-    elsif user_input == "B"
-      @letter_B.each {|x| print @ascii_slices[x]}
-    elsif user_input == "C"
-      @letter_C.each {|x| print @ascii_slices[x]}
-    elsif user_input == "D"
-      @letter_D.each {|x| print @ascii_slices[x]}
-    elsif user_input == "E"
-      @letter_E.each {|x| print @ascii_slices[x]}
-    elsif user_input == "F"
-      @letter_F.each {|x| print @ascii_slices[x]}
-    elsif user_input == "G"
-      @letter_G.each {|x| print @ascii_slices[x]}
-    else
-      return nil
+  def matcher(input)
+    if input == 'A'
+      @char_a.each { |char_code| print @char_slices[char_code] }
+    elsif input == 'B'
+      @char_b.each { |char_code| print @char_slices[char_code] }
+    elsif input == 'C'
+      @char_c.each { |char_code| print @char_slices[char_code] }
+    elsif input == 'D'
+      @char_d.each { |char_code| print @char_slices[char_code] }
+    elsif input == 'E'
+      @char_e.each { |char_code| print @char_slices[char_code] }
+    elsif input == 'F'
+      @char_f.each { |char_code| print @char_slices[char_code] }
+    elsif input == 'G'
+      @char_g.each { |char_code| print @char_slices[char_code] }
     end
   end
-
 end
