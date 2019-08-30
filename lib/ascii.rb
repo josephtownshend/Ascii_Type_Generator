@@ -10,6 +10,7 @@ class AsciiGenerator
     @char_e = [0, 0, 1, 1, 0, 0, 1, 1, 0, 3]
     @char_f = [0, 0, 1, 1, 0, 0, 1, 1, 1, 5]
     @char_g = [0, 0, 1, 1, 1, 2, 2, 2, 0, 3]
+    @char_h = [2, 2, 2, 2, 0, 0, 2, 2, 2, 4]
   end
 
   def matcher(input)
@@ -27,6 +28,8 @@ class AsciiGenerator
       @char_f.each { |char_code| print @char_slices[char_code] }
     elsif input == 'G'
       @char_g.each { |char_code| print @char_slices[char_code] }
+    elsif input == 'H'
+      @char_h.each { |char_code| print @char_slices[char_code] }
     end
   end
 end
