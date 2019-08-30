@@ -2,7 +2,7 @@
 
 class AsciiGenerator
   def initialize
-    @char_slices = ["//////////\n", "////      \n", "////  ////\n", '//////////', '////  ////', '////      ']
+    @char_slices = ["//////////\n", "////      \n", "////  ////\n", '//////////', '////  ////', '////      ', '   ////   ', "   ////   \n"]
     @char_a = [0, 0, 2, 2, 0, 0, 2, 2, 2, 4]
     @char_b = [0, 0, 2, 2, 0, 0, 2, 2, 0, 3]
     @char_c = [0, 0, 1, 1, 1, 1, 1, 1, 0, 3]
@@ -11,6 +11,7 @@ class AsciiGenerator
     @char_f = [0, 0, 1, 1, 0, 0, 1, 1, 1, 5]
     @char_g = [0, 0, 1, 1, 1, 2, 2, 2, 0, 3]
     @char_h = [2, 2, 2, 2, 0, 0, 2, 2, 2, 4]
+    @char_i = [0, 0, 7, 7, 7, 7, 7, 7, 0, 3]
   end
 
   def matcher(input)
@@ -30,6 +31,8 @@ class AsciiGenerator
       @char_g.each { |char_code| print @char_slices[char_code] }
     elsif input == 'H'
       @char_h.each { |char_code| print @char_slices[char_code] }
+    elsif input == 'I'
+      @char_i.each { |char_code| print @char_slices[char_code] }
     end
   end
 end
