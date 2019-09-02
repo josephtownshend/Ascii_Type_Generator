@@ -217,7 +217,7 @@ describe AsciiGenerator do
       ].join("\n")).to_stdout
     end
 
-    it 'should return ASCII I when user inputs T' do
+    it 'should return ASCII T when user inputs T' do
       expect { @ascii_gen.matcher('T') }.to output([
         '//////////',
         '//////////',
@@ -229,6 +229,21 @@ describe AsciiGenerator do
         '   ////   ',
         '   ////   ',
         '   ////   '
+      ].join("\n")).to_stdout
+    end
+
+    it 'should return ASCII U when user inputs U' do
+      expect { @ascii_gen.matcher('U') }.to output([
+        '////  ////',
+        '////  ////',
+        '////  ////',
+        '////  ////',
+        '////  ////',
+        '////  ////',
+        '////  ////',
+        '////  ////',
+        '//////////',
+        '//////////'
       ].join("\n")).to_stdout
     end
   end
