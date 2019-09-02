@@ -18,6 +18,7 @@ class AsciiGenerator
     # @char_m = [1, 1, 1, 1, 1, 2, 2, 2, 0, 3]
     # @char_n = [1, 1, 1, 1, 1, 2, 2, 2, 0, 3]
     @char_o = [0, 0, 2, 2, 2, 2, 2, 2, 0, 3]
+    @char_p = [0, 0, 2, 2, 0, 0, 1, 1, 1, 5]
 
   end
 
@@ -46,6 +47,8 @@ class AsciiGenerator
       @char_l.each { |char_code| print @char_slices[char_code] }
     elsif input == 'O'
       @char_o.each { |char_code| print @char_slices[char_code] }
+    elsif input == 'P'
+      @char_p.each { |char_code| print @char_slices[char_code] }
     end
   end
 end
