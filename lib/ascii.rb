@@ -22,8 +22,7 @@ class AsciiGenerator
     # @char_q = [1, 1, 1, 1, 1, 2, 2, 2, 0, 3]
     # @char_r = [1, 1, 1, 1, 1, 2, 2, 2, 0, 3]
     @char_s = [0, 0, 1, 1, 0, 0, 8, 8, 0, 3]
-
-
+    @char_t = [0, 0, 7, 7, 7, 7, 7, 7, 7, 6]
   end
 
   def matcher(input)
@@ -55,6 +54,8 @@ class AsciiGenerator
       @char_p.each { |char_code| print @char_slices[char_code] }
     elsif input == 'S'
       @char_s.each { |char_code| print @char_slices[char_code] }
+    elsif input == 'T'
+      @char_t.each { |char_code| print @char_slices[char_code] }
     end
   end
 end
