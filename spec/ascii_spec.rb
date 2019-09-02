@@ -201,5 +201,20 @@ describe AsciiGenerator do
         '////      '
       ].join("\n")).to_stdout
     end
+
+    it 'should return ASCII S when user inputs S' do
+      expect { @ascii_gen.matcher('S') }.to output([
+        '//////////',
+        '//////////',
+        '////      ',
+        '////      ',
+        '//////////',
+        '//////////',
+        '      ////',
+        '      ////',
+        '//////////',
+        '//////////'
+      ].join("\n")).to_stdout
+    end
   end
 end

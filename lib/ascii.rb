@@ -2,7 +2,7 @@
 
 class AsciiGenerator
   def initialize
-    @char_slices = ["//////////\n", "////      \n", "////  ////\n", '//////////', '////  ////', '////      ', '   ////   ', "   ////   \n"]
+    @char_slices = ["//////////\n", "////      \n", "////  ////\n", '//////////', '////  ////', '////      ', '   ////   ', "   ////   \n", "      ////\n"]
     @char_a = [0, 0, 2, 2, 0, 0, 2, 2, 2, 4]
     @char_b = [0, 0, 2, 2, 0, 0, 2, 2, 0, 3]
     @char_c = [0, 0, 1, 1, 1, 1, 1, 1, 0, 3]
@@ -19,6 +19,10 @@ class AsciiGenerator
     # @char_n = [1, 1, 1, 1, 1, 2, 2, 2, 0, 3]
     @char_o = [0, 0, 2, 2, 2, 2, 2, 2, 0, 3]
     @char_p = [0, 0, 2, 2, 0, 0, 1, 1, 1, 5]
+    # @char_q = [1, 1, 1, 1, 1, 2, 2, 2, 0, 3]
+    # @char_r = [1, 1, 1, 1, 1, 2, 2, 2, 0, 3]
+    @char_s = [0, 0, 1, 1, 0, 0, 8, 8, 0, 3]
+
 
   end
 
@@ -49,6 +53,8 @@ class AsciiGenerator
       @char_o.each { |char_code| print @char_slices[char_code] }
     elsif input == 'P'
       @char_p.each { |char_code| print @char_slices[char_code] }
+    elsif input == 'S'
+      @char_s.each { |char_code| print @char_slices[char_code] }
     end
   end
 end
