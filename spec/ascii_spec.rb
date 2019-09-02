@@ -171,5 +171,20 @@ describe AsciiGenerator do
         '//////////'
       ].join("\n")).to_stdout
     end
+
+    it 'should return ASCII O when user inputs O' do
+      expect { @ascii_gen.matcher('O') }.to output([
+        '//////////',
+        '//////////',
+        '////  ////',
+        '////  ////',
+        '////  ////',
+        '////  ////',
+        '////  ////',
+        '////  ////',
+        '//////////',
+        '//////////'
+      ].join("\n")).to_stdout
+    end
   end
 end

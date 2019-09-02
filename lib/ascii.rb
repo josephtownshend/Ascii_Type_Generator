@@ -15,6 +15,10 @@ class AsciiGenerator
     @char_j = [1, 1, 1, 1, 1, 2, 2, 2, 0, 3]
     # @char_k = [1, 1, 1, 1, 1, 2, 2, 2, 0, 3]
     @char_l = [1, 1, 1, 1, 1, 1, 1, 1, 0, 3]
+    # @char_m = [1, 1, 1, 1, 1, 2, 2, 2, 0, 3]
+    # @char_n = [1, 1, 1, 1, 1, 2, 2, 2, 0, 3]
+    @char_o = [0, 0, 2, 2, 2, 2, 2, 2, 0, 3]
+
   end
 
   def matcher(input)
@@ -40,6 +44,8 @@ class AsciiGenerator
       @char_j.each { |char_code| print @char_slices[char_code] }
     elsif input == 'L'
       @char_l.each { |char_code| print @char_slices[char_code] }
+    elsif input == 'O'
+      @char_o.each { |char_code| print @char_slices[char_code] }
     end
   end
 end
