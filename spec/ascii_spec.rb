@@ -156,5 +156,20 @@ describe AsciiGenerator do
         '//////////'
       ].join("\n")).to_stdout
     end
+
+    it 'should return ASCII L when user inputs L' do
+      expect { @ascii_gen.matcher('L') }.to output([
+        '////      ',
+        '////      ',
+        '////      ',
+        '////      ',
+        '////      ',
+        '////      ',
+        '////      ',
+        '////      ',
+        '//////////',
+        '//////////'
+      ].join("\n")).to_stdout
+    end
   end
 end
