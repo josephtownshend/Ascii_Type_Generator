@@ -24,6 +24,7 @@ class AsciiGenerator
     @char_s = [0, 0, 1, 1, 0, 0, 8, 8, 0, 3]
     @char_t = [0, 0, 7, 7, 7, 7, 7, 7, 7, 6]
     @char_u = [2, 2, 2, 2, 2, 2, 2, 2, 0, 3]
+    @char_z = [0, 0, 8, 8, 0, 0, 1, 1, 0, 3]
   end
 
   def matcher(input)
@@ -59,6 +60,8 @@ class AsciiGenerator
       @char_t.each { |char_code| print @char_slices[char_code] }
     elsif input == 'U'
       @char_u.each { |char_code| print @char_slices[char_code] }
+    elsif input == 'Z'
+      @char_z.each { |char_code| print @char_slices[char_code] }
     end
   end
 end

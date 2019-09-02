@@ -246,5 +246,20 @@ describe AsciiGenerator do
         '//////////'
       ].join("\n")).to_stdout
     end
+
+    it 'should return ASCII Z when user inputs Z' do
+      expect { @ascii_gen.matcher('Z') }.to output([
+        '//////////',
+        '//////////',
+        '      ////',
+        '      ////',
+        '//////////',
+        '//////////',
+        '////      ',
+        '////      ',
+        '//////////',
+        '//////////'
+      ].join("\n")).to_stdout
+    end
   end
 end
