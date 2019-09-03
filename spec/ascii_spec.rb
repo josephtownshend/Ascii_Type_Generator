@@ -8,12 +8,12 @@ describe AsciiGenerator do
   end
 
   describe '#word_store' do
-    it 'should store a word when inputted' do
+    it 'should store a single letter when inputted' do
       @ascii_gen.word_store('A')
       expect(@ascii_gen.word_storage).to eq ['A']
     end
   end
-  
+
   describe '#matcher' do
     it 'should return ASCII A when user inputs A' do
       expect { @ascii_gen.matcher('A') }.to output([
