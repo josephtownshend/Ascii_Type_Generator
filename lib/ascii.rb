@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
 class AsciiGenerator
+
+attr_reader :word_storage
+
   def initialize
+    @word_storage = []
     @char_slices = ["//////////\n", "////      \n", "////  ////\n", '//////////', '////  ////', '////      ', '   ////   ', "   ////   \n", "      ////\n"]
     @char_a = [0, 0, 2, 2, 0, 0, 2, 2, 2, 4]
     @char_b = [0, 0, 2, 2, 0, 0, 2, 2, 0, 3]
@@ -30,6 +34,13 @@ class AsciiGenerator
     # @char_y = [1, 1, 1, 1, 1, 2, 2, 2, 0, 3]
     @char_z = [0, 0, 8, 8, 0, 0, 1, 1, 0, 3]
   end
+
+
+
+  def word_store(input)
+     @word_storage << input
+  end
+
 
   def matcher(input)
     if input == 'A'
