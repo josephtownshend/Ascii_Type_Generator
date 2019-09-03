@@ -35,12 +35,9 @@ attr_reader :word_storage
     @char_z = [0, 0, 8, 8, 0, 0, 1, 1, 0, 3]
   end
 
-
-
   def word_store(input)
      @word_storage << input
   end
-
 
   def matcher(input)
     if input == 'A'
